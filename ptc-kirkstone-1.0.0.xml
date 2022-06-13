@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+        <default sync-j="4" revision="kirkstone"/>
+
+        <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+        <remote fetch="https://github.com/Freescale" name="freescale"/>
+        <remote fetch="https://github.com/openembedded" name="oe"/>
+
+        <project name="poky" path="sources/poky" remote="yocto" revision="45d7615dfef8093a2467d52ca1130e62db6a1187"/>
+
+        <project name="meta-freescale" path="sources/meta-freescale" remote="freescale" revision="92df6b76f38397b75ea76d588935b5b91b63c58c"/>
+
+        <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="fcc7d7eae82be4c180f2e8fa3db90a8ab3be07b7"/>
+
+        <project name="fsl-community-bsp-base" path="sources/base" remote="freescale" revision="60f79f7af60537146298560079ae603260f0bd14">
+                <linkfile dest="README" src="README"/>
+                <linkfile dest="setup-environment" src="setup-environment"/>
+        </project>
+
+        <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" revision="fc15f5003043da23212596be7366ae2547c308ad"/>
+
+</manifest>

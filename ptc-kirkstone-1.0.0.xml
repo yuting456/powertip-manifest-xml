@@ -18,6 +18,7 @@
                 <linkfile dest="setup-environment" src="setup-environment"/>
         </project>
 
+        <project remote="freescale" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
         <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="freescale" revision="fc15f5003043da23212596be7366ae2547c308ad"/>
 
 </manifest>
